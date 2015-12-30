@@ -150,6 +150,8 @@ return [
 
         Zizaco\Entrust\EntrustServiceProvider::class,
 
+        HitenMitsurugi\Ryutsuisen\Providers\RyutsuisenProvider::class,
+
         /*
          * Application Service Providers...
          */
