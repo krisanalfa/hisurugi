@@ -1,0 +1,21 @@
+{
+  "name": "hisurugi",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "moduleType": [
+    "globals"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lato": "~0.3.0"
+  }
+}

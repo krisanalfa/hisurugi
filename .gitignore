@@ -1,0 +1,14 @@
+*.sublime-project
+*.sublime-workspace
+
+.env
+/vendor
+/.vagrant
+/node_modules
+Homestead.json
+Homestead.yaml
+/bower_components
+
+/public/js
+/public/css
+/public/fonts
