@@ -1,0 +1,56 @@
+.btn .button-icon {
+    display: inline-block;
+    margin-right: 2px; }
+
+.list-group-item { word-wrap: break-word; }
+
+.assignment-container { padding: 0 64px; }
+
+    .assignment-container .actions { padding-left: 32px; }
+
+.callback-wrapper .inner-content { padding: 16px; }
+
+    .callback-wrapper .inner-content .actions-wrapper { padding: 0; }
+
+    .callback-wrapper .inner-content .controller-wrapper { padding: 0; }
+
+.controller .nav-tabs { border: none; }
+    .controller .list-group { padding-top: 4px; }
+
+    .controller .nav-tabs > li,
+    .controller .nav-tabs > li.active {
+        background-color: #fff;
+        width: 100%; }
+
+    .controller .nav-tabs > li.active {
+        background-color: #337ab7;
+        color: #fff; }
+
+        .controller .nav-tabs > li > a {
+            border-radius: 0;
+            width: auto;
+            display: block;
+            border: none;
+            margin: 0;
+            word-wrap: break-word; }
+
+        .controller .nav-tabs > li.active > a,
+        .controller .nav-tabs > li.active > a:hover,
+        .controller .nav-tabs > li.active > a:focus {
+            border: none;
+            background-color: #337ab7;
+            color: #fff; }
+
+        .controller .nav-tabs > li.active > a {
+            background-color: #337ab7;
+            color: #fff; }
+
+.actions .block { display: block; }
+    .controller h3,
+    .actions h3 { margin: 0 0 8px 0; border-bottom: 1px solid #d1d1d1; padding-bottom: 4px; }
+
+    .actions .block input {
+        display: inline-block;
+        margin-right: 4px; }
+
+    .actions code { background: none; }

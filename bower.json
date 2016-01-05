@@ -6,7 +6,7 @@
   "moduleType": [
     "globals"
   ],
-  "homepage": "",
+  "homepage": "https://github.com/krisanalfa/hisurugi",
   "private": true,
   "ignore": [
     "**/.*",
@@ -18,5 +18,8 @@
   "dependencies": {
     "lato": "~0.3.0",
     "themify-icons-sass": "~0.0.3"
-  }
+  },
+  "authors": [
+    "Krisan Alfa Timur <krisanalfa@foobarinc.com>"
+  ]
 }

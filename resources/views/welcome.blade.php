@@ -30,7 +30,7 @@
                     letter-spacing: 4px; }
 
             @media (max-width: 768px) {
-                .vertical-center:before { display: none; }
+                .vertical-center::before { display: none; }
             }
 
         </style>

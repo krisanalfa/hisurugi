@@ -30,14 +30,12 @@ class MigrationCommand extends Command
         $migrationFile = base_path("database/migrations")."/".date('Y_m_d_His')."_ryukansen_setup_tables.php";
 
         if (!file_exists($migrationFile) and $fs = fopen($migrationFile, 'x')) {
-            $this->laravel->view->addNamespace('ryukansen', realpath(dirname(__DIR__).'/resources/views'));
-
             $output = $this->laravel->view->make('ryukansen::generators.migration')->render();
 
             fwrite($fs, $output);
             fclose($fs);
 
-            return $this->info("Migration successfully created!");
+            return $this->info("Ryukansen migration successfully created!");
         }
 
         $this->error(

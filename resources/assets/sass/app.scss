@@ -1,10 +1,23 @@
+// Variable overider
 @import "resources/assets/sass/variable-overrider";
+
+// Lato
 @import "bower_components/lato/scss/lato";
+
+// Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+// Themify icon
 @import "bower_components/themify-icons-sass/sass/main";
+
+// Helpers
 @import "resources/assets/sass/helpers";
-@import "resources/assets/sass/customs";
 
 // Hiten Mitsurugi - Ryutsuisen
-@import "src/HitenMitsurugi/Ryutsuisen/resources/assets/sass/app";
-@import "src/HitenMitsurugi/Ryukansen/resources/assets/sass/app";
+@import "src/HitenMitsurugi/Ryutsuisen/resources/assets/sass/ryutsuisen";
+
+// Hiten Mitsurugi - Ryukansen
+@import "src/HitenMitsurugi/Ryukansen/resources/assets/sass/ryukansen";
+
+// Your custom style
+@import "resources/assets/sass/customs";
