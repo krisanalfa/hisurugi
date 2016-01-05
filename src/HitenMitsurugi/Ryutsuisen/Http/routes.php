@@ -12,7 +12,9 @@
 */
 
 Route::group(['middleware' => ['web'], 'namespace' => 'HitenMitsurugi\Ryutsuisen\Http\Controllers'], function () {
-    Route::get('role/bulk', ['as' => 'role.bulk', 'uses' => 'RoleController@bulk']);
-
     Route::resource('role', 'RoleController');
+
+    Route::get('permission/bulk', ['as' => 'permission.bulk', 'uses' => 'PermissionController@bulk']);
+
+    Route::resource('permission', 'PermissionController');
 });

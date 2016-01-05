@@ -1,10 +1,14 @@
 @extends('layouts.main')
 
+@section('title')
+Bulk Create Permission
+@stop
+
 @section('content')
 <div class="assignment-container">
     <div class="panel panel-default mg-top-32">
         <div class="panel-heading">
-            <h3 class="panel-title">Bulk Create Role</h3>
+            <h3 class="panel-title">Bulk Create Permission</h3>
         </div>
         <div class="panel-body">
             <div class="row callback-wrapper">

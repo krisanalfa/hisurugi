@@ -8,18 +8,16 @@ use Illuminate\Http\Request;
 use HitenMitsurugi\Ryutsuisen\RouteCollector;
 use HitenMitsurugi\Ryutsuisen\Contracts\Role as RoleContract;
 
-class RoleController extends Controller
+class PermissionController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(RoleContract $role)
+    public function index()
     {
-        return view('ryutsuisen::role.index', [
-            'collection' => app('ryutsuisen.role')->orderBy('name')->get(),
-        ]);
+        //
     }
 
     /**
@@ -29,7 +27,7 @@ class RoleController extends Controller
      */
     public function create()
     {
-        return view('ryutsuisen::role.form');
+        //
     }
 
     /**
@@ -40,15 +38,7 @@ class RoleController extends Controller
      */
     public function store(Request $request)
     {
-        $validator = $this->validator($request->all());
-
-        if ($validator->fails()) {
-            $this->throwValidationException(
-                $request, $validator
-            );
-        }
-
-        return redirect('role.index');
+        //
     }
 
     /**
@@ -97,18 +87,16 @@ class RoleController extends Controller
     }
 
     /**
-     * Get a validator for an incoming store request.
+     * Import all permission from registered named routes.
      *
-     * @param array $data
+     * @param  \HitenMitsurugi\Ryutsuisen\RouteCollector $routeCollector
      *
-     * @return \Illuminate\Contracts\Validation\Validator
+     * @return \Illuminate\Http\Response
      */
-    protected function validator(array $data)
+    public function bulk(RouteCollector $routeCollector)
     {
-        return Validator::make($data, [
-            'name' => 'required|max:255|unique:roles',
-            'display_name' => 'max:255',
-            'description' => 'max:255',
+        return view('ryutsuisen::permission.bulk', [
+            'routes' => $routeCollector->all(),
         ]);
     }
 }

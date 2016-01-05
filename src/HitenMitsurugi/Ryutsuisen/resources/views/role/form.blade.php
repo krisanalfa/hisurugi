@@ -1,5 +1,9 @@
 @extends('layouts.main')
 
+@section('title')
+Role
+@stop
+
 @section('content')
 <div class="container pd-top-32">
     <form action="{{ route('role.store') }}" method="POST" role="form" class="form-horizontal">
