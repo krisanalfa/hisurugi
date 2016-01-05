@@ -1,0 +1,26 @@
+.role-table.table > thead > tr > th,
+.role-table.table > thead > tr > td,
+.role-table.table > tbody > tr > th,
+.role-table.table > tbody > tr > td,
+.role-table.table > tfoot > tr > th,
+.role-table.table > tfoot > tr > td { vertical-align: middle; }
+
+.role-table.table > thead > tr > th ul,
+.role-table.table > thead > tr > td ul,
+.role-table.table > tbody > tr > th ul,
+.role-table.table > tbody > tr > td ul,
+.role-table.table > tfoot > tr > th ul,
+.role-table.table > tfoot > tr > td ul { margin: 0; }
+
+label.has-required { display: table; }
+    label.has-required i.input-required {
+        display: table-cell;
+        width: 75%;
+        vertical-align: middle;
+        line-height: 25px;
+        color: #f44336; }
+    label.has-required span { display: table-cell; }
+
+span.help-block {
+    font-style: italic;
+    color: #9e9e9e; }

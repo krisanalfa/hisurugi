@@ -16,6 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "lato": "~0.3.0"
+    "lato": "~0.3.0",
+    "themify-icons-sass": "~0.0.3"
   }
 }

@@ -25,7 +25,7 @@ class UserRoleAssignmentSeeder extends Seeder
         // PM
         $projectManager = User::where(['email' => 'pm@foobarinc.com'])->first();
         $projectManagerRole = Role::where(['name' => 'project-manager'])->first();
-        $projectManagerPermission = Permission::where(['name' => 'knowing-budget'])->first();
+        $projectManagerPermission = Permission::where(['name' => 'listing-budget'])->first();
 
         $projectManager->attachRole($projectManagerRole);
         $projectManagerRole->attachPermission($projectManagerPermission);

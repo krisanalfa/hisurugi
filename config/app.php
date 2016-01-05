@@ -150,6 +150,7 @@ return [
 
         Zizaco\Entrust\EntrustServiceProvider::class,
 
+        HitenMitsurugi\Ryukansen\Providers\RyukansenProvider::class,
         HitenMitsurugi\Ryutsuisen\Providers\RyutsuisenProvider::class,
 
         /*

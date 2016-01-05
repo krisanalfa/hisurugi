@@ -23,7 +23,8 @@
         ],
         "psr-4": {
             "App\\": "app/",
-            "HitenMitsurugi\\Ryutsuisen\\": "src/HitenMitsurugi/Ryutsuisen/"
+            "HitenMitsurugi\\Ryutsuisen\\": "src/HitenMitsurugi/Ryutsuisen/",
+            "HitenMitsurugi\\Ryukansen\\": "src/HitenMitsurugi/Ryukansen/"
         }
     },
     "autoload-dev": {

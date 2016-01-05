@@ -3,7 +3,7 @@
 @section('content')
 <div class="container pd-top-32">
     <div class="table-responsive">
-        <table class="table table-hover table-bordered table-stripped">
+        <table class="table table-hover table-bordered table-striped table-condensed">
             <thead>
                 <tr>
                     <th>Name</th>

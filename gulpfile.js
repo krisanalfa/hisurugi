@@ -19,5 +19,6 @@ elixir(function(mix) {
             'node_modules/bootstrap-sass/assets/javascripts/bootstrap.js',
         ], 'public/js/all.js', './')
         .copy('node_modules/bootstrap-sass/assets/fonts', 'public/fonts')
-        .copy('bower_components/lato/font', 'public/fonts/lato');
+        .copy('bower_components/lato/font', 'public/fonts/lato')
+        .copy('bower_components/themify-icons-sass/fonts', 'public/fonts/themify');
 });
